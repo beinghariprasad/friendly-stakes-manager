@@ -2,41 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Poker-themed design system with professional casino aesthetics */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Poker table green background */
+    --background: 134 41% 8%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card and chip colors */
+    --card: 134 20% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 134 20% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Gold accent for chips and highlights */
+    --primary: 45 93% 58%;
+    --primary-foreground: 0 0% 9%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Muted green for secondary elements */
+    --secondary: 134 20% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Subtle backgrounds */
+    --muted: 134 15% 10%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent colors */
+    --accent: 45 93% 58%;
+    --accent-foreground: 0 0% 9%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Red for losses/danger */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs */
+    --border: 134 20% 20%;
+    --input: 134 20% 15%;
+    --ring: 45 93% 58%;
 
-    --radius: 0.5rem;
+    /* Success color for wins */
+    --success: 120 60% 50%;
+    --success-foreground: 0 0% 98%;
+
+    /* Warning color */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 9%;
+
+    /* Poker chip colors */
+    --chip-red: 0 84% 60%;
+    --chip-blue: 220 91% 56%;
+    --chip-green: 120 60% 50%;
+    --chip-black: 0 0% 15%;
+    --chip-purple: 270 60% 60%;
+
+    /* Gradients */
+    --gradient-felt: linear-gradient(135deg, hsl(var(--background)), hsl(134 30% 10%));
+    --gradient-chip: linear-gradient(135deg, hsl(var(--primary)), hsl(45 80% 65%));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(134 25% 15%));
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
